@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="./input.css">
     <link href="./src/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
 </head>
@@ -20,68 +18,37 @@
     <hr>
     <br>
 
-    <header class="p-5 w-[100%] md:flex md:items-center md:justify-between">
-            <div class="flex justify-between w-4/5 items-center ">
-              <span class="text-3xl  cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-              </span>
-              <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 text-white md:justify-between">
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="" class="text-xl hover:text-cyan-500 duration-500"><h1>Home</h1></a>
-                    
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#welcome" class="text-xl hover:text-cyan-500 duration-500"><h1>Welcome</h1></a>
-                    
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#about" class="text-xl hover:text-cyan-500 duration-500"><h1>About</h1></a>
-                    
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#service" class="text-xl hover:text-cyan-500 duration-500"><h1>Service</h1></a>
-                   
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="#openinghours" class="text-xl hover:text-cyan-500 duration-500"><h1>Opening Hours</h1></a>
-                    
-                </li>
-                <li class="mx-4 my-6 md:my-0">
-                    <a href="" class="text-xl hover:text-cyan-500 duration-500"><h1>Features</h1></a>
-                </li>
-            </div>
-        
-        
-            <div class="text-2xl">
-                <button class="hover:bg-black bg-white xl:p-4 lg:p-1 sm:text-sm lg:text-lg xl:text-2xl sm:p-0 sm:mr-0 xl:mr-4 text-black hover:text-white">Contact Us</button>
-            </div>
-        <h2 class=""></h2>
-            </ul>
-          </nav>
-        
-        
-          <script>
-            function Menu(e){
-              let list = document.querySelector('ul');
-              e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-            }
-          </script>
+    <header class="lg:flex justify-between">
+        <div class="lg:flex justify-between m-4 text-white sm:w-[90%] xl:w-[60%] sm:text-sm lg:text-xl xl:text-2xl">
+            <a href=""><h1>Home</h1></a>
+            <a href="#welcome"><h1>Welcome</h1></a>
+            <a href="#about"><h1>About</h1></a>
+            <a href="#service"><h1>Service</h1></a>
+            <a href="#openinghours"><h1>Opening Hours</h1></a>
+            <a href=""><h1>Features</h1></a>
+        </div>
+        <div class="text-2xl">
+            <button class="hover:bg-black bg-white xl:p-4 lg:p-1 sm:text-sm lg:text-lg xl:text-2xl sm:p-0 sm:mr-0 xl:mr-4 text-black hover:text-white">Contact Us</button>
+        </div>
     </header>
     
 
+    <br>
     <hr>
     <section class="w-full h-[30%] flex flex-col justify-center items-center text-white font-serif gap-4">
         <br>
-        <h1 id="welcome" class=" text-xl sm:text-xl lg:text-4xl xl:text-8xl ">INNOVATE. LEARN.</h1>
-        <h1 class=" text-xl sm:text-xl lg:text-4xl xl:text-8xl">DEPLOY.</h1> 
-        <p class="sm:text-sm lg:text-xl xl:text-2xl">Commited to Excellence</p>
+        <h1 id="welcome" class="text-3xl sm:text-4xl lg:text-6xl xl:text-8xl ">INNOVATE. LEARN.</h1>
+        <h1 class=" text-3xl sm:text-4xl lg:text-6xl xl:text-8xl">DEPLOY.</h1> 
+        <p class="text-lg sm:text-lg lg:text-xl xl:text-2xl">Commited to Excellence</p>
     </section>
     <br>
     <br>
-    <section class="relative flex justify-center">
+    <section class="relative">
+        <!-- First Image -->
         <img src="https://www.link8.in/wp-content/uploads/2023/12/AI-in-business.jpg" alt="" class="sm:h-[30rem] w-[60%] xl:h-[55rem] object-cover ml-[25%]">
-        <img src="https://miro.medium.com/v2/resize:fit:1358/0*KAOkeVYKMyBc019r" alt="" class="absolute lg:top-36 left-20 transform w-[45%] object-cover xl:h-[40rem] sm:h-80 sm:top-20">
-
+        
+        <!-- Second Image (hidden on screens below lg) -->
+        <img src="https://miro.medium.com/v2/resize:fit:1358/0*KAOkeVYKMyBc019r" alt="" class="hidden lg:block absolute lg:top-36 left-20 transform w-[45%] object-cover xl:h-[40rem] sm:h-80 sm:top-20">
     </section>
     <br>
     <hr>
