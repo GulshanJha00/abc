@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./input.css">
     <link href="./src/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
 </head>
@@ -18,27 +20,60 @@
     <hr>
     <br>
 
-    <header class="flex justify-between">
-        <div class="flex justify-between m-4 text-white sm:w-[90%] xl:w-[60%] sm:text-sm lg:text-xl xl:text-2xl">
-            <a href=""><h1>Home</h1></a>
-            <a href="#welcome"><h1>Welcome</h1></a>
-            <a href="#about"><h1>About</h1></a>
-            <a href="#service"><h1>Service</h1></a>
-            <a href="#openinghours"><h1>Opening Hours</h1></a>
-            <a href=""><h1>Features</h1></a>
-        </div>
-        <div class="text-2xl">
-            <button class="hover:bg-black bg-white xl:p-4 lg:p-1 sm:text-sm lg:text-lg xl:text-2xl sm:p-0 sm:mr-0 xl:mr-4 text-black hover:text-white">Contact Us</button>
-        </div>
+    <header class="p-5 w-[100%] md:flex md:items-center md:justify-between">
+            <div class="flex justify-between w-4/5 items-center ">
+              <span class="text-3xl  cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+              </span>
+              <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 text-white md:justify-between">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="" class="text-xl hover:text-cyan-500 duration-500"><h1>Home</h1></a>
+                    
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#welcome" class="text-xl hover:text-cyan-500 duration-500"><h1>Welcome</h1></a>
+                    
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#about" class="text-xl hover:text-cyan-500 duration-500"><h1>About</h1></a>
+                    
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#service" class="text-xl hover:text-cyan-500 duration-500"><h1>Service</h1></a>
+                   
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#openinghours" class="text-xl hover:text-cyan-500 duration-500"><h1>Opening Hours</h1></a>
+                    
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="" class="text-xl hover:text-cyan-500 duration-500"><h1>Features</h1></a>
+                </li>
+            </div>
+        
+        
+            <div class="text-2xl">
+                <button class="hover:bg-black bg-white xl:p-4 lg:p-1 sm:text-sm lg:text-lg xl:text-2xl sm:p-0 sm:mr-0 xl:mr-4 text-black hover:text-white">Contact Us</button>
+            </div>
+        <h2 class=""></h2>
+            </ul>
+          </nav>
+        
+        
+          <script>
+            function Menu(e){
+              let list = document.querySelector('ul');
+              e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+            }
+          </script>
     </header>
     
 
-    <br>
     <hr>
     <section class="w-full h-[30%] flex flex-col justify-center items-center text-white font-serif gap-4">
         <br>
-        <h1 id="welcome" class=" sm:text-xl lg:text-4xl xl:text-8xl ">INNOVATE. LEARN.</h1>
-        <h1 class="sm:text-xl lg:text-4xl xl:text-8xl">DEPLOY.</h1> 
+        <h1 id="welcome" class=" text-xl sm:text-xl lg:text-4xl xl:text-8xl ">INNOVATE. LEARN.</h1>
+        <h1 class=" text-xl sm:text-xl lg:text-4xl xl:text-8xl">DEPLOY.</h1> 
         <p class="sm:text-sm lg:text-xl xl:text-2xl">Commited to Excellence</p>
     </section>
     <br>
@@ -76,13 +111,13 @@
         </div>
         <div class="flex justify-around">
             <div>
-                <img src="https://img.freepik.com/premium-photo/futuristic-tech-robot-ai-with-hands-keyboard-graphic-design-vertical-mobile-wallpaper_896558-37780.jpg" alt="" class="h-[37rem]">
+                <img src="https://img.freepik.com/premium-photo/futuristic-tech-robot-ai-with-hands-keyboard-graphic-design-vertical-mobile-wallpaper_896558-37780.jpg" alt="" class="xl:h-[37rem] lg:h-96 sm:h-72">
             </div>
             <div>
-                <img src="https://static.wixstatic.com/media/11062b_fc27b5b0fa954db989f31525aa00a6f6~mv2.jpg/v1/fill/w_408,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0-02.jpg" alt="" class="h-[37rem]">
+                <img src="https://static.wixstatic.com/media/11062b_fc27b5b0fa954db989f31525aa00a6f6~mv2.jpg/v1/fill/w_408,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0-02.jpg" alt="" class="xl:h-[37rem] lg:h-96 sm:h-72">
             </div>
             <div>
-                <img src="https://static.wixstatic.com/media/11062b_2f432bb150684617b529ed2c1a0327bc~mv2.jpg/v1/fill/w_408,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0-03.jpg" alt="" class="h-[37rem]">
+                <img src="https://static.wixstatic.com/media/11062b_2f432bb150684617b529ed2c1a0327bc~mv2.jpg/v1/fill/w_408,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0-03.jpg" alt="" class="xl:h-[37rem] lg:h-96 sm:h-72">
             </div>
         </div>
         <br>
@@ -116,11 +151,11 @@
 
     <section class="flex">
         <div class="w-1/2">
-            <img src="https://static.wixstatic.com/media/11062b_e4a7ccc4d3764f7fa73ba88b6392e018~mv2.jpg/v1/fill/w_564,h_905,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_e4a7ccc4d3764f7fa73ba88b6392e018~mv2.jpg" alt="" class="xl:h-[50rem] xl:w-[50rem] xl:mt-20 sm:h-36 m-20 object-cover">
+            <img src="https://static.wixstatic.com/media/11062b_e4a7ccc4d3764f7fa73ba88b6392e018~mv2.jpg/v1/fill/w_564,h_905,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_e4a7ccc4d3764f7fa73ba88b6392e018~mv2.jpg" alt="" class="xl:h-[50rem] xl:w-[50rem] xl:mt-20 sm:h-72 m-20 object-cover">
         </div>
-        <div class=" w-1/2 mt-40">
-            <h1 id="openinghours" class="m-20 xl:text-7xl sm:text-2xl text-center text-white mb-8 border w-1/2">OPENING HOURS</h1>
-            <div class="ml-40 xl:text-3xl sm:text-sm w-3/4 text-white">
+        <div class=" w-1/2 xl:mt-40 lg:mt-20">
+            <h1 id="openinghours" class="xl:m-20 sm:mt-20 xl:text-7xl sm:text-2xl text-center text-white mb-8 border w-1/2">OPENING HOURS</h1>
+            <div class="xl:ml-40 sm:ml-10 xl:text-3xl sm:text-sm w-3/4 text-white">
 
                 <p class="mb-4">Mon-Fri: 9am - 6pm</p>
                 <p class="mb-4">Sat: 10am - 2pm</p>
