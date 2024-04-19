@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.getElementById('menuBtn');
-    const menuItems = document.getElementById('menuItems');
+    const toggleBtn = document.querySelector(".nav-menu-moblie");
+    const navMenu = document.querySelector(".nav-menu");
+    toggleBtn.addEventListener("click", function(){
+    console.log("clicked");
+    toggleBtn.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    });
 
     function toggleMenu() {
         menuItems.classList.toggle('hidden');
@@ -11,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    menuBtn.addEventListener('click', toggleMenu);
 
     function updateMenuVisibility() {
         if (window.innerWidth >= 1024) {
@@ -29,3 +33,13 @@ document.addEventListener('DOMContentLoaded', function () {
         updateMenuVisibility();
     });
 });
+
+
+
+
+
+
+
+
+
+

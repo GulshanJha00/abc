@@ -1,59 +1,178 @@
-<!doctype html>
-<html>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANVESHAN</title>
+    <link rel="stylesheet" href="./input.css">
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+
+
 </head>
-
-<body class="bg-cyan-400">
-  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
-    <div class="flex justify-between items-center ">
-      <span class="text-2xl font-[Poppins] cursor-pointer">
-        <img class="h-10 inline"
-          src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
-        tailwind
-      </span>
-
-      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-      </span>
+<body class="font-serif">
+    <div class="flex justify-center">
+        <h1 class="text-white text-5xl mt-7">ANVESHAN</h1>
     </div>
+    <br>
+    <hr>
+    <br>
 
-    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
-      </li>
-      <li class="mx-4 my-6 md:my-0">
-        <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
-      </li>
+    <header class="navbar lg:flex justify-between">
+        <div id="menuItems" class="hidden lg:flex justify-between m-4 text-white sm:w-[90%] xl:w-[60%] sm:text-sm lg:text-xl xl:text-2xl">
+            <a href="#"><h1>Home</h1></a>
+            <a href="#welcome"><h1>Welcome</h1></a>
+            <a href="#about"><h1>About</h1></a>
+            <a href="#service"><h1>Service</h1></a>
+            <a href="#openinghours"><h1>Opening Hours</h1></a>
+            <a href="#"><h1>Features</h1></a>
+        </div>
+        <div class="text-2xl">
+            <button id="menuBtn" >Menu</button>
+        </div>
+    </header>
+    
+    
+    
 
-      <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
-        Get started
-      </button>
-<h2 class=""></h2>
-    </ul>
-  </nav>
+    <br>
+    <hr>
+    <section class="w-full h-[30%] flex flex-col justify-center items-center text-white font-serif gap-4">
+        <br>
+        <h1 id="welcome" class="text-3xl sm:text-4xl lg:text-6xl xl:text-8xl ">INNOVATE. LEARN.</h1>
+        <h1 class=" text-3xl sm:text-4xl lg:text-6xl xl:text-8xl">DEPLOY.</h1> 
+        <p class="text-lg sm:text-lg lg:text-xl xl:text-2xl">Commited to Excellence</p>
+    </section>
+    <br>
+    <br>
+    <section class="relative">
+        <img src="https://www.link8.in/wp-content/uploads/2023/12/AI-in-business.jpg" alt=""  class="w-[92%] h-96 sm:h-[30rem] lg:h-[55rem] object-cover mx-4 lg:ml-[20%] 
+        lg:w-[70%] xl:w-[70%]">
+        
+        <!-- Second Image (hidden on screens below lg) -->
+        <img src="https://miro.medium.com/v2/resize:fit:1358/0*KAOkeVYKMyBc019r" alt="" class="hidden lg:block absolute lg:top-36 left-20 transform w-[45%] object-cover xl:h-[40rem] sm:h-80 sm:top-20">
+    </section>
+    
+    <br>
+    <hr>
+    <br>
+    <section class="lg:m-20 m-4">
+        <!-- Content -->
+        <div class="lg:flex">
+            <div class="lg:w-1/2 w-full">
+                <div>
+                    <h1 id="about" class="xl:text-7xl text-3xl text-white mb-8 lg:border w-1/2">ABOUT US</h1>
+                    <p class="xl:text-xl sm:text-sm lg:w-3/4 w-full text-white mb-8">Anveshan is a machine learning deployment and project club of a college. Since opening, we have strived towards innovation and excellence. Our commitment to quality products, exceptional services, and incomparable customer care keeps us motivated. We never stop learning and improving, and are continuing to expand our offerings based on how we can best serve our members.</p>
+                </div>
+                <!-- Image with id "one" (hidden on screens above 1024px (lg)) -->
+                <div class="hidden lg:flex">
+                    <img id="one" src="https://www.exhibit.tech/wp-content/uploads/2022/11/960x0.jpg" alt="" class="xl:h-80 xl:mt-20 sm:h-36 object-cover">
+                </div>
+            </div>
+            <!-- Image with id "two" (displayed on the right side on screens above 1024px (lg)) -->
+            <div class="lg:w-1/2">
+                <!-- Adjust width for screens smaller than lg -->
+                <img id="two" src="https://bernardmarr.com/wp-content/uploads/2021/07/machine-learning-1-scaled.jpeg" alt="" class="w-full h-full object-cover lg:w-auto">
+            </div>
+            
+        </div>
+    </section>
+    
+    <br>
+    <hr>
+    <br>
+    <section>
+        <div class="flex justify-between lg:m-20 mx-2 flex-col lg:flex-row">
+            <h1 id="service" class="xl:text-7xl text-2xl text-white lg:border mb-8 lg:mb-0">SERVICES</h1>
+            <p class="xl:text-4xl text-lg text-white lg:self-center">We Put Your Needs First</p>
+        </div>
+        
+        <div class="flex justify-around flex-col lg:flex-row overflow-x-hidden">
+            <div class="m-4 lg:mx-0 flex flex-col max-w-full">
+                <div>
+                    <img src="https://img.freepik.com/premium-photo/futuristic-tech-robot-ai-with-hands-keyboard-graphic-design-vertical-mobile-wallpaper_896558-37780.jpg" alt="" class="xl:h-[37rem] lg:h-96 h-72 w-full object-cover">
+                </div>
+                <div class="w-full lg:w-96 flex-grow"> <!-- Adjust width for screens smaller than lg -->
+                    <br>
+                    <h1 class="xl:text-2xl sm:text-xl text-white mb-2">SHOPPING CONSULTATION</h1>
+                    <p class="xl:text-xl sm:text-base text-black flex-grow">We want all of our customers to experience the impressive level of professionalism when working with Anveshan. All of our services, especially this one, exist to make your life easier and stress free. You can trust us to supply you with the best products, as well as top quality customer service.</p>
+                </div>
+            </div>
+            <div class="m-4 lg:mx-0 flex flex-col max-w-full">
+                <div>
+                    <img src="https://static.wixstatic.com/media/11062b_fc27b5b0fa954db989f31525aa00a6f6~mv2.jpg/v1/fill/w_408,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0-02.jpg" alt="" class="xl:h-[37rem] lg:h-96 h-72 w-full object-cover">
+                </div>
+                <div class="w-full lg:w-96 flex-grow"> <!-- Adjust width for screens smaller than lg -->
+                    <br>
+                    <h1 class="xl:text-2xl sm:text-xl text-white mb-2">CUSTOMER SERVICE CALL</h1>
+                    <p class="xl:text-xl sm:text-base text-black flex-grow m-0">This is one of our most popular services available. It’s made a big difference for many of our customers, and is provided with the highest level of excellence. With this service, we ensure all details are simple, seamless and handled in a timely manner. Whenever you work with Anveshan, you can trust that you're in great hands.</p>
+                </div>
+            </div>
+            <div class="m-4 lg:mx-0 flex flex-col max-w-full">
+                <div>
+                    <img src="https://static.wixstatic.com/media/11062b_2f432bb150684617b529ed2c1a0327bc~mv2.jpg/v1/fill/w_408,h_596,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0-03.jpg" alt="" class="xl:h-[37rem] lg:h-96 h-72 w-full object-cover">
+                </div>
+                <div class="w-full lg:w-96 flex-grow"> <!-- Adjust width for screens smaller than lg -->
+                    <br>
+                    <h1 class="xl:text-2xl sm:text-xl text-white mb-2">SCHEDULED DELIVERY</h1>
+                    <p class="xl:text-xl sm:text-base text-black flex-grow m-0">Frequently utilized by most of our customers, this service has been essential to success on many occasions. When it comes to all of our services, you can count on us to take care of your every need. We pride ourselves on our exceptional customer service, and guarantee you'll love working with our team. Let us know how we can assist you today.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <br>
 
+    </section>
 
-  <script>
-    function Menu(e){
-      let list = document.querySelector('ul');
-      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-    }
-  </script>
+    <br>
+    <hr>
+    <br>
+
+    <section class="flex flex-col sm:flex-row">
+        <div class="w-[90%] sm:w-full flex items-center ml-4  mr-4 lg:m-20">
+            <img src="https://static.wixstatic.com/media/11062b_e4a7ccc4d3764f7fa73ba88b6392e018~mv2.jpg/v1/fill/w_564,h_905,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_e4a7ccc4d3764f7fa73ba88b6392e018~mv2.jpg" alt="" class="w-full h-48 sm:h-[50%] object-cover  lg:mx-auto my-4 ">
+        </div>
+        
+        
+        <div class="w-full sm:w-full mt-8 sm:mt-0 text-center flex flex-col justify-center">
+            <h1 id="openinghours" class="text-white mb-8 border w-1/2 xl:text-7xl sm:text-2xl mx-auto">OPENING HOURS</h1>
+            <div class="mx-auto xl:text-3xl sm:text-sm w-3/4 text-white">
+                <p class="mb-4">Mon-Fri: 9am - 6pm</p>
+                <p class="mb-4">Sat: 10am - 2pm</p>
+                <p class="mb-4">Sun: Closed</p>
+                <button class="bg-white text-black p-4 rounded-3xl hover:bg-black hover:text-white">View More</button>
+            </div>
+        </div>
+        
+        
+        </div>
+        <br>
+        <br>
+    </section>
+    
+    
+    
+    
+    
+
+    <footer class="bg-white flex flex-col sm:flex-row justify-center items-center w-full py-8">
+        <div class="w-full sm:w-1/2">
+            <h1 class="text-center text-black xl:text-5xl sm:text-2xl">ANVESHAN</h1>
+        </div>
+        <div class="mt-8 sm:mt-0 sm:ml-20 text-center">
+            <p class="text-lg sm:text-base mb-2">123-456-7890</p>
+            <p class="text-lg sm:text-base mb-2">info@mysite.com</p>
+            <p class="text-lg sm:text-base mb-4">The National Institute Of Engineering</p>
+            <p class="text-lg sm:text-base">Stay Informed, Fill the google Form Now: <a href="#" class="text-blue-700 hover:text-red-700">Google Form</a></p>
+        </div>
+    </footer>
+    
 </body>
-
 </html>
