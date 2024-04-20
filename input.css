@@ -167,3 +167,20 @@ body{
     }
     
 }
+
+footer {
+    background-image: url(https://images.collegedunia.com/public/reviewPhotos/507917/IMG-20231206-WA0018.jpg?mode=cover);
+    background-size: cover;
+    background-position: center;
+    height: max-content;
+    position: relative; 
+}
+
+
+footer h1,
+footer p {
+    color: rgb(255, 255, 255); /* Adjust text color as needed */
+    background-color: rgba(255, 0, 0, 0.614);
+    
+}
+
